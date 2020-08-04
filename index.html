@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThapaCafe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <label class="logo">LOGO</label>
+                <ul class="main-nav animated slideInDown" id="check-class">
+                    <li><a href="#">CAke delivery</a></li>
+                    <li><a href="#">how to order</a></li>
+                    <li><a href="#">check more</a></li>
+                    <li><a href="#">signup</a></li>
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="main-content-header">
+           <h1>Welcome to <span>SHAAN CAFE</span>.<br> House of cake lovers oo yes.</h1>
+            <a href="#" class="btn btn-full1">click to order</a>
+            <a href="#" class="btn btn-full2">show me more</a>   
+        </div>
+    </header>
+</body>
+<script type="text/javascript">
+    function slideshow(){
+        var x = document.getElementById("check-class");
+        if(x.style.display==="none")
+        {
+            x.style.display="block"; 
+        }
+        else{
+            x.style.display="none";
+        }
+    }
+</script>
+</html>
